@@ -1,6 +1,6 @@
 <template>
     <main>
-      <h1 class="h6">{{ coba[0]['nama_barang'] }}</h1>
+      <h1 class="h6">{{ coba }}</h1>
     </main>
   </template>
 

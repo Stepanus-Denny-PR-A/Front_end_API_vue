@@ -33,7 +33,7 @@
             <div class="card-body">
               <h5 class="card-title">Barang</h5>
               <p class="card-text">Berisi data semua barang yang ada</p>
-              <a href="/Barang?nama=Barang" class="btn btn-primary">Lihat</a>
+              <a href="/Barang" class="btn btn-primary">Lihat</a>
             </div>
           </div>
 

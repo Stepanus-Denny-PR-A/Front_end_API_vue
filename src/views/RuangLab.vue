@@ -2,7 +2,7 @@
     <div class="container ">
             <div class="row align-items-center mt-5">
                 <div class="col">
-                <h1 > Ruang Kelas</h1>
+                <h1 > Ruang Lab</h1>
                 </div>
                 <div class="col">
                     <form class="d-flex " role="search">
@@ -14,7 +14,7 @@
     <div class="container w-75 mt-5">
         <div class="row row-cols-auto row-cols-lg-5 g-4 ">
              <div v-for="(data_kelas, index) in data_kelas" :key="index" :class="data_kelas.jenis_ruangan === 'Lab' ? 'col-3' : 'col-0'">
-                <button v-if="data_kelas.jenis_ruangan === 'Kelas'" class="btn btn-primary">
+                <button v-if="data_kelas.jenis_ruangan === 'Lab'" class="btn btn-primary">
                     {{ data_kelas.nama_ruangan }}
                 </button>
             </div>
