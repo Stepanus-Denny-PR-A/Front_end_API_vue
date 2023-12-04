@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Dashboard.vue'
-
+import Login from '../views/Login.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -10,9 +10,24 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/RuangKelas',
-      name: 'RuangKelas',
-      component: () => import('../views/RuangKelas.vue')
+      path: '/',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/deskripsi',
+      name: 'deskripsi',
+      component: () => import('../views/Deskripsi_barang.vue')
+    },
+    {
+      path: '/barcode',
+      name: 'barcode',
+      component: () => import('../views/Barcode.vue')
+    },
+    {
+      path: '/edit/:id',
+      name: 'edit',
+      component: () => import('../views/Edit.vue')
     },
     {
       path: '/Barang',
@@ -20,15 +35,17 @@ const router = createRouter({
       component: () => import('../views/Barang.vue')
     },
     {
+      path: '/tambah_barang',
+      name: 'tambah_barang',
+      component: () => import('../views/Tambah_Barang.vue')
+    },  
+    {
       path: '/tes',
       name: 'tes',
       component: () => import('../views/TesapiView.vue')
-    },   
-     {
-      path: '/tes2',
-      name: 'tes2',
-      component: () => import('../views/testing.vue')
     }
+   
+    
     
   ]
 })
