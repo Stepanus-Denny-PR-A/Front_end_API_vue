@@ -113,7 +113,7 @@ export default {
       alert('Harap masukkan tanggal dengan format YYYY-MM-DD Serta isi semua kolom');
       return; // Berhenti eksekusi jika format tidak sesuai
     }
-    id: this.$route.params.id
+    const id = this.$route.params.id;
     // Lanjutkan dengan pengiriman data jika format sudah benar
     axios.patch('http://127.0.0.1:8000/api/barang/'+id, this.model.isi)
       .then(res => {

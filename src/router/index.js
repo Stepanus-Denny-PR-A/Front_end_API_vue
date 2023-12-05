@@ -15,7 +15,7 @@ const router = createRouter({
       component: Login
     },
     {
-      path: '/deskripsi',
+      path: '/deskripsi/:id',
       name: 'deskripsi',
       component: () => import('../views/Deskripsi_barang.vue')
     },
@@ -23,6 +23,11 @@ const router = createRouter({
       path: '/barcode',
       name: 'barcode',
       component: () => import('../views/Barcode.vue')
+    },
+    {
+      path: '/pengajuan',
+      name: 'pengajuan',
+      component: () => import('../views/Pengajuan.vue')
     },
     {
       path: '/edit/:id',
