@@ -76,8 +76,14 @@ import foot from  '../components/foot.vue'
           <button type="submit" @click="save_barang" class="btn btn-success btn-block">Tambah Barang</button>
         </div>
       </div>
+      <div class="form-group row mb-5">
+        <label for="inputPJ" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-5">
+        </div>
+      </div>
+      <foot />
   </div>
-  <foot />
+  
 </template>
 
 <script lang="js">

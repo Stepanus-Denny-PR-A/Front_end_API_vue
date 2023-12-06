@@ -2,7 +2,7 @@
   <Navbar />
   <h1 class="text-center mt-5">List Barang</h1>
     <div class="container-fluid">
-    <div class="container mt-4">
+    <div class="container-fluid mt-4">
         <a href="/Tambah_Barang" type="button" class="btn btn-primary">Tambah Barang</a>
     <table class="table table-bordered mt-4">
         <thead class="table-dark">
@@ -32,7 +32,7 @@
             <td>{{ data_kelas.tanggal_registrasi}}</td>
             <td>{{ data_kelas.ruangan }}</td>
             <td>{{ data_kelas.penanggung_jawab }}</td>
-            <td><RouterLink :to="{path: '/edit/'+data_kelas.id}" class="btn btn-info btn-sm items-center">Edit</RouterLink> 
+            <td><RouterLink :to="{path: '/edit/'+data_kelas.id}" class="btn btn-info btn-sm items-center">Edit</RouterLink> ||
                 <a :href="'/barcode?id=' + data_kelas.id" class="btn btn-sm btn-info">QR Code</a></td>
           </tr>
         </tbody>

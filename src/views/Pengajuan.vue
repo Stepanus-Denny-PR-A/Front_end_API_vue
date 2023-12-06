@@ -1,9 +1,8 @@
 <template>
     <Navbar />
     <h1 class="text-center mt-5">Pengajuan</h1>
-      <div class="container-fluid">
+      <div class="container-fluid mb-5">
       <div class="container mt-4">
-          <a href="/Tambah_Barang" type="button" class="btn btn-primary">Tambah Barang</a>
       <table class="table table-bordered mt-4">
           <thead class="table-dark">
             <tr>
@@ -23,8 +22,8 @@
               <td>{{ data_pengajuan.tanggal_pengajuan }}</td>
               <td>{{ data_pengajuan.id_barang }}</td>
 
-              <td><RouterLink :to="{path: '/edit/'+data_pengajuan.id}" class="btn btn-info btn-sm items-center ">Lihat Barang</RouterLink> 
-                  <a :href="'/barcode?id=' + data_pengajuan.id" class="btn btn-sm btn-info">Lihat Deskripsi</a></td>
+              <td><RouterLink :to="{path: '/deskripsi/'+data_pengajuan.id_barang}" class="btn btn-info btn-sm items-center ">Lihat Barang</RouterLink> ||
+                  <a :href="'/barcode?id=' + data_pengajuan.id" class="btn btn-sm btn-info">Lihat Pengajuan</a></td>
             </tr>
           </tbody>
         </table>
