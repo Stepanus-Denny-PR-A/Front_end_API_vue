@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <router-link to="/tes">
+      <router-link to="/Dashboard">
         <img src="https://belajar.usd.ac.id/pluginfile.php/1/theme_moove/logo/1693193463/logo_usd.png"
           class="img-fluid img-thumbnail" style="width: 10rem" alt="Logo">
       </router-link>
