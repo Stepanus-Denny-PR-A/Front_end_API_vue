@@ -73,7 +73,7 @@ import foot from  '../components/foot.vue'
       <!-- button submit -->
       <div class="form-group row mb-4">
         <div class="col-sm-6">
-          <button type="submit" @click="save_barang" class="btn btn-success btn-block">Tambah Barang</button>
+          <button type="submit" @click="save_barang" class="btn btn-success btn-block">Edit Barang</button>
         </div>
       </div>
       <div class="form-group row mb-5">

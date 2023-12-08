@@ -48,9 +48,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <RouterLink :to="{path: '/formulirpengajuan/'+data_barang.id}" v-if="!user" class="btn btn-primary mt-3">Buat pengajuan</RouterLink>  
             </div>
         </div>
     </div>
+
 <foot />
   </template>
   <script setup lang="js">

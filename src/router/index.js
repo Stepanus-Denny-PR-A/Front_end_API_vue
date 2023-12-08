@@ -15,6 +15,36 @@ const router = createRouter({
       component: Login
     },
     {
+      path: '/formulirpengajuan/:id',
+      name: 'formulir_pengajuan',
+      component: () => import('../views/formulir_pengajuan.vue')
+    },
+    {
+      path: '/akun',
+      name: 'akun',
+      component: () => import('../views/akun.vue')
+    },
+    {
+      path: '/user',
+      name: 'user',
+      component: () => import('../views/barang_user.vue')
+    },
+    {
+      path: '/logout',
+      name: 'logout',
+      component: () => import('../views/logout.vue')
+    },
+    {
+      path: '/pengajuan/:id',
+      name: 'pengajuan_deskripsi',
+      component: () => import('../views/pengajuan_deskripsi.vue')
+    },
+    {
+      path: '/pengajuan_barang/:id',
+      name: 'pengajuan_deskripsi',
+      component: () => import('../views/pengajuan_deskripsi.vue')
+    },
+    {
       path: '/deskripsi/:id',
       name: 'deskripsi',
       component: () => import('../views/Deskripsi_barang.vue')

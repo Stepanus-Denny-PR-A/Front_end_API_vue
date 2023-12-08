@@ -7,6 +7,7 @@
           <thead class="table-dark">
             <tr>
               <th scope="col">ID</th>
+              <th scope="col">Nama Pengaju</th>
               <th scope="col">Isi Pengajuan</th>
               <th scope="col">Status</th>
               <th scope="col">Tanggal Pengejuan</th>
@@ -17,13 +18,16 @@
           <tbody >
             <tr v-for="(data_pengajuan, index) in data_pengajuan">
              <th scope="row">{{ data_pengajuan.id }}</th>
+             <td>{{ data_pengajuan.nama }}</td>
               <td>{{ data_pengajuan.isi_pengajuan }}</td>
               <td>{{ data_pengajuan.status}}</td>
               <td>{{ data_pengajuan.tanggal_pengajuan }}</td>
               <td>{{ data_pengajuan.id_barang }}</td>
 
               <td><RouterLink :to="{path: '/deskripsi/'+data_pengajuan.id_barang}" class="btn btn-info btn-sm items-center ">Lihat Barang</RouterLink> ||
-                  <a :href="'/barcode?id=' + data_pengajuan.id" class="btn btn-sm btn-info">Lihat Pengajuan</a></td>
+                  <a :href="'/pengajuan/' + data_pengajuan.id" class="btn btn-sm btn-info">Lihat Pengajuan</a>
+                || <button class="btn btn-sm btn-info" @click="hapus(data_pengajuan.id)">Hapus</button>
+                </td>
             </tr>
           </tbody>
         </table>
@@ -56,6 +60,12 @@
           console.log(res);
           this.data_pengajuan = res.data;
         });
+      },
+      hapus(id){
+        axios.delete('http://127.0.0.1:8000/api/pengajuan/'+id).then(res =>{
+        console.log(res);
+        window.location.reload();
+      })
       }
     }
   }
