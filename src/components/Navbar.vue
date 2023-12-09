@@ -24,8 +24,12 @@
             <router-link to="/akun" class="nav-link" aria-current="page">Akun</router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/maintenance" class="nav-link" aria-current="page">Maintenance</router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/" class="nav-link" aria-current="page">Logout</router-link>
           </li>
+          
         </ul>
       </div>
     </div>

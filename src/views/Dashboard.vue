@@ -26,6 +26,14 @@ import foot from  '../components/foot.vue'
               <a href="/Barang" class="btn btn-primary">Lihat</a>
             </div>
           </div>
+          <div class="card" style="width: 20rem;">
+            <img src="https://cdn0.iconfinder.com/data/icons/vpn-security-1-7/1024/repair-512.png" class="card-img-top" alt="Foto barang">
+            <div class="card-body">
+              <h5 class="card-title">maintenance</h5>
+              <p class="card-text">Berisi data semua maintenance</p>
+              <a href="/maintenance" class="btn btn-primary">Lihat</a>
+            </div>
+          </div>
       </div>
     </div>
   </div>

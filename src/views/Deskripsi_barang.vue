@@ -1,5 +1,5 @@
 <template>
-  <Navbar />
+  <Navbar v-if="user"/>
     <div class="container">
         <h2 class="text-center my-4">Data Barang</h2>
         <div class="row justify-content-center">
@@ -48,7 +48,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <RouterLink :to="{path: '/formulirpengajuan/'+data_barang.id}" v-if="!user" class="btn btn-primary mt-3">Buat pengajuan</RouterLink>  
+                <RouterLink :to="{path: '/formulirpengajuan/'+data_barang.id}" v-if="!user"  class="btn btn-primary mt-3" >Buat pengajuan</RouterLink>  
             </div>
         </div>
     </div>
@@ -58,6 +58,7 @@
   <script setup lang="js">
 import Navbar from '../components/Navbar.vue'
 import foot from  '../components/foot.vue'
+const user = sessionStorage.getItem('user')
 </script>
 
 <script lang="js">

@@ -35,11 +35,6 @@ const router = createRouter({
       component: () => import('../views/logout.vue')
     },
     {
-      path: '/pengajuan/:id',
-      name: 'pengajuan_deskripsi',
-      component: () => import('../views/pengajuan_deskripsi.vue')
-    },
-    {
       path: '/pengajuan_barang/:id',
       name: 'pengajuan_deskripsi',
       component: () => import('../views/pengajuan_deskripsi.vue')
@@ -65,9 +60,19 @@ const router = createRouter({
       component: () => import('../views/Edit.vue')
     },
     {
+      path: '/Tambah_maintenance',
+      name: 'Tambah_maintenance',
+      component: () => import('../views/Tambah_maintenance.vue')
+    },
+    {
       path: '/Barang',
       name: 'Barang',
       component: () => import('../views/Barang.vue')
+    },
+    {
+      path: '/maintenance',
+      name: 'maintenance',
+      component: () => import('../views/maintenance.vue')
     },
     {
       path: '/tambah_barang',
@@ -78,6 +83,11 @@ const router = createRouter({
       path: '/tes',
       name: 'tes',
       component: () => import('../views/TesapiView.vue')
+    },
+    {
+      path: '/pengajuan/:id',
+      name: 'pengajuan_deskripsi',
+      component: () => import('../views/pengajuan_deskripsi.vue')
     }
    
     
