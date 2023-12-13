@@ -1,4 +1,9 @@
 <template>
+    <nav class="navbar bg-black navbar-dark">
+  <div class="container-fluid">
+    <img src="https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/USD_LOGO.svg/1200px-USD_LOGO.svg.png" class="img-thumbnail mx-auto d-block" width="100" height="100" alt="">
+  </div>
+</nav>
 <div class="container mt-5">
       
         <fieldset>
@@ -15,9 +20,14 @@
         </fieldset>
       
     </div>
+    <foot />
 </template>
 
-<script>
+<script setup lang="js">
+import foot from  '../components/foot.vue'
+</script>
+
+<script lang="js">
 import axios from 'axios';
 export default {
   data() {

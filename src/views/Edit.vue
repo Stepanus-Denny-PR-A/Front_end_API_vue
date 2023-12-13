@@ -107,7 +107,11 @@ export default {
        }
    },
    mounted(){
-    console.log(this.$route.params.id)
+    const id = this.$route.params.id;
+    axios.get('http://127.0.0.1:8000/api/barang/'+id).then(res=>{
+      console.log(res.data)
+      this.model.isi=res.data
+    })
    },
    methods: {
   save_barang() {
@@ -116,7 +120,7 @@ export default {
       !this.isValidDateFormat(this.model.isi.tanggal_registrasi)
     ) {
       alert('Harap masukkan tanggal dengan format YYYY-MM-DD Serta isi semua kolom');
-      return; // Berhenti eksekusi jika format tidak sesuai
+      return; 
     }
     const id = this.$route.params.id;
     // Lanjutkan dengan pengiriman data jika format sudah benar
@@ -134,6 +138,7 @@ export default {
           ruangan: '',
           penanggung_jawab: ''
         };
+        this.$router.push('/Barang')
       })
       .catch(error => {
         // Tangani kesalahan jika terjadi pada pengiriman data

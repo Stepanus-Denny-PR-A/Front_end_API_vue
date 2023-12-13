@@ -1,7 +1,7 @@
 <template>
     <Navbar />
       <div class="container mb-5">
-          <h2 class="text-center my-4">Data Barang</h2>
+          <h2 class="text-center my-4">Data Pengajuan</h2>
           <div class="row justify-content-center">
               <div class="col-md-8">
                   <table class="table custom-table">

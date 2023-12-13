@@ -132,6 +132,7 @@ export default {
           ruangan: '',
           penanggung_jawab: ''
         };
+        this.$router.push('/Barang')
       })
       .catch(error => {
         // Tangani kesalahan jika terjadi pada pengiriman data

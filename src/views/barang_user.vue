@@ -1,4 +1,9 @@
 <template>
+  <nav class="navbar bg-black navbar-dark">
+  <div class="container-fluid">
+    <img src="https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/USD_LOGO.svg/1200px-USD_LOGO.svg.png" class="img-thumbnail mx-auto d-block" width="100" height="100" alt="">
+  </div>
+</nav>
     <h1 class="text-center mt-5">List Barang</h1>
       <div class="container-fluid">
       <div class="container-fluid mt-4">

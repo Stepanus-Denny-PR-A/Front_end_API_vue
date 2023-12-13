@@ -80,6 +80,11 @@ const router = createRouter({
       component: () => import('../views/Tambah_Barang.vue')
     },  
     {
+      path: '/tambah_admin',
+      name: 'tambah_admin',
+      component: () => import('../views/tambah_admin.vue')
+    }, 
+    {
       path: '/tes',
       name: 'tes',
       component: () => import('../views/TesapiView.vue')
@@ -96,5 +101,5 @@ const router = createRouter({
 })
 
 
-
+///tambah_admin
 export default router

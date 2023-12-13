@@ -11,6 +11,10 @@
                               <td>{{ user.id }}</td>
                           </tr>
                           <tr>
+                              <th>username</th>
+                              <td>{{ user.username }}</td>
+                          </tr>
+                          <tr>
                               <th>Email</th>
                               <td>{{ user.email }}</td>
                           </tr>
@@ -25,6 +29,10 @@
                           <tr>
                               <th>Role</th>
                               <td>Admin</td>
+                          </tr>
+                          <tr>
+                              <th>Tambah Admin</th>
+                              <td> <a href="/tambah_admin" class="btn btn-info"> Tambah Admin</a> </td>
                           </tr>
                       </tbody>
                   </table>
